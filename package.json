@@ -6,7 +6,7 @@
   "homepage": "https://github.com/VENKATARAMANA-T/Factorial-Fibonacci-Prime-Checker",
   "scripts": {
     "dev": "vite",
-    "dist": "vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
