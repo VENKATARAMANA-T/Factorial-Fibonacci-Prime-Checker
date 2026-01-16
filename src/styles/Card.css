@@ -1,0 +1,150 @@
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #bbb;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f0f4ff;
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.result-title {
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.result-content {
+  color: #555;
+  word-wrap: break-word;
+}
+
+.result.error {
+  color: #e74c3c;
+  background: #fadbd8;
+  border-left-color: #e74c3c;
+}
+
+.result.error .result-title {
+  color: #e74c3c;
+}
+
+.result.success {
+  color: #27ae60;
+  background: #d5f4e6;
+  border-left-color: #27ae60;
+}
+
+.result.success .result-title {
+  color: #27ae60;
+}
+
+.fibonacci-series {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.fibonacci-item {
+  background: #667eea;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.info-text {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+}
